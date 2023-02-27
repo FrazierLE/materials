@@ -23,7 +23,7 @@ const ArticleCard = ({ id, title, image, showDetails }) => {
         <CardActions>
           <Button
             size='small'
-            component='button'
+            component={'button'}
             id={title}
             onClick={(id) => showDetails(id)}
           >See Article Details</Button>

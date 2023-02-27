@@ -39,7 +39,7 @@ const resetFilter = () => {
   return (
     <div>
       <Header />
-      <FilterMenu />
+      <FilterMenu category={category} setCategory={setCategory}/>
       <Form filterArticles={filterArticles} resetFilter={resetFilter}/>
       <ArticlesContainer articles={articles}/>
     </div>

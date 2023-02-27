@@ -23,7 +23,7 @@ const ModalCard = (props) => {
         <Container>
           <Button onClick={props.closeModal} sx={{cursor: 'pointer'}}><ClearIcon /></Button>
           <Card className='modal-card card'>
-            <Typography component='h3'>
+            <Typography>
             {item.title} {item.byline}
             </Typography>
             <CardMedia
@@ -32,12 +32,12 @@ const ModalCard = (props) => {
               image={item.multimedia?.[0].url || 'https://serpstat.com/files/img/34/1676542462.4999.png'}
               alt="article image"
             />
-            <Typography component='p'>
+            <Typography component={'span'}>
             {item.abstract}
             </Typography>
             <CardActions>
               <Button size='small'
-              component='a'
+              variant='a'
               href={item.url}
               >Read More on NY Times</Button>
             </CardActions>
