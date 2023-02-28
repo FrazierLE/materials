@@ -33,7 +33,7 @@ const ArticlesContainer = (props) => {
     />
   </Grid>))
   return (
-    <Container sx={{ py: 0, display: 'flex', alignContent: 'center'}} maxWidth="md">
+    <Container sx={{ py: 0, display: 'flex', alignContent: 'center'}} maxWidth="lg">
        {open && <ModalCard modal={modal} closeModal={closeModal} open={open} key={modal[0].uri.slice(14)}/>} 
       <Grid container spacing={2} style={{...styling, cursor: 'pointer'}}>
         {list}

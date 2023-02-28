@@ -17,7 +17,7 @@ const ArticleCard = ({ id, title, image, showDetails }) => {
         }}
         image={image}
       />
-        <Typography gutterBottom variant='h3' fontSize='1rem'>
+        <Typography gutterBottom variant='h2' fontSize='1rem'>
           {title}
         </Typography>
         <CardActions>
