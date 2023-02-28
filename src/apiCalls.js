@@ -1,4 +1,4 @@
 export const fetchData = (category) => {
-  return fetch(`https://api.nytimes.com/svc/topstories/v2/${category}.json?api-key=EsSFQeaciPxPiQbvmElEbARGb59zSloF`)
+  return fetch(`https://api.nytimes.com/svc/topstories/v2/${category}.json?api-key=${process.env.REACT_APP_API_KEY}`)
     .then(res => res.json())
 }

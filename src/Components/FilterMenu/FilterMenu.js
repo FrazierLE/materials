@@ -9,7 +9,7 @@ const FilterMenu = (props) => {
   }
 
   return(
-    <Box sx={{ minWidth: 120}}>
+    <Box sx={{ minWidth: 120, margin: '1rem' }}>
       <InputLabel id='category-label'>Choose category</InputLabel>
       <Select
         labelId='category-label'
@@ -17,6 +17,7 @@ const FilterMenu = (props) => {
         label='category'
         value={''}
         onChange={chooseCategory}
+        sx={{width: 100}}
       >
         <MenuItem value={'home'}>Choose a category...</MenuItem>
       {categories.map((item, index) => <MenuItem key={index} value={item.toLowerCase()}>{item}</MenuItem>)}
