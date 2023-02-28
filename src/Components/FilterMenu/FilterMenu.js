@@ -19,7 +19,7 @@ const FilterMenu = (props) => {
         onChange={chooseCategory}
       >
         <MenuItem value={'home'}>Choose a category...</MenuItem>
-      {categories.map(item => <MenuItem value={item.toLowerCase()}>{item}</MenuItem>)}
+      {categories.map((item, index) => <MenuItem key={index} value={item.toLowerCase()}>{item}</MenuItem>)}
       </Select>
     </Box>
   )

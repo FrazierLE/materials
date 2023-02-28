@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import { CardMedia, Container } from '@mui/material'
 import Grid from '@mui/material/Grid'
-import ArticleCard from './ArticleCard'
-import ModalCard from './ModalCard';
+import ArticleCard from '../ArticleCard/ArticleCard'
+import ModalCard from '../ModalCard/ModalCard';
 
 const ArticlesContainer = (props) => {
   const [open, setOpen] = useState(false)

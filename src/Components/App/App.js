@@ -1,9 +1,9 @@
 import React, {useEffect, useState} from 'react';
-import { fetchData } from './apiCalls';
-import Header from './Header';
-import ArticlesContainer from './ArticlesContainer';
-import Form from './Form';
-import FilterMenu from './FilterMenu';
+import { fetchData } from '../../apiCalls';
+import Header from '../Header/Header';
+import ArticlesContainer from '../ArticlesContainer/ArticlesContainer';
+import Form from '../Form/Form';
+import FilterMenu from '../FilterMenu/FilterMenu';
 
 const App = () => {
   const [ articles, setArticles ] = useState([])
@@ -38,8 +38,8 @@ const resetFilter = () => {
 
   return (
     <div>
-      <Header />
       <FilterMenu category={category} setCategory={setCategory}/>
+      <Header />
       <Form filterArticles={filterArticles} resetFilter={resetFilter}/>
       <ArticlesContainer articles={articles}/>
     </div>
