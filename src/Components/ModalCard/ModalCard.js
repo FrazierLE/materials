@@ -18,12 +18,12 @@ const style = {
 };
 
 const ModalCard = (props) => {
-    const card = props.modal.map(item => {
+    const card = props.modal.map((item, index) => {
       return(
-        <Container>
+        <Container key={index}>
           <Button onClick={props.closeModal} sx={{cursor: 'pointer'}}><ClearIcon /></Button>
           <Card className='modal-card card'>
-            <Typography>
+            <Typography component={'p'}>
             {item.title} {item.byline}
             </Typography>
             <CardMedia
@@ -49,7 +49,7 @@ const ModalCard = (props) => {
     <div className='modal-card'>
       <Modal open={props.open} onClose={props.closeModal} >
         <Box sx={style}>
-          <Typography>
+          <Typography component={'div'}>
             {card}
           </Typography>
         </Box>

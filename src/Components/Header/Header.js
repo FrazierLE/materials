@@ -20,9 +20,8 @@ const Header = () => {
           variant="h1"
           align="center"
           color="text.primary"
-          marginTop='2rem'
           fontSize='4rem'
-          // gutterBottom
+          gutterBottom
         >
         Daily Dose of News
         </Typography>
